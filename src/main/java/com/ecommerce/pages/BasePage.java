@@ -1,5 +1,7 @@
 package com.ecommerce.pages;
 
+import java.util.Set;
+
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.By;
@@ -56,10 +58,21 @@ public class BasePage {
 		click(DriverManager.getDriver().findElement(by));
 	}
 
-
+	public static void sendkeys(WebElement element, int count)  {
+		explicitwait(element);
+		element.clear();
+		String text = String.valueOf(count);
+		element.sendKeys(text);
+		//LogStatus.pass(text + " is entered in to the "+ element);
+		
+		log.info(text + " is entered in to the "+ element);
+	}
+	
+	
 
 	public static void sendkeys(WebElement element, String text)  {
 		explicitwait(element);
+		element.clear();
 		element.sendKeys(text);
 		//LogStatus.pass(text + " is entered in to the "+ element);
 		
@@ -83,6 +96,7 @@ public class BasePage {
 	}
 
 	public static void selectByValue(WebElement element,String text) {
+		explicitwait(element);
 		new Select(element).selectByValue(text);
 	}
 	
@@ -92,5 +106,26 @@ public class BasePage {
 		log.info(text + " selected from dropdown "+ element);
 	}
 
+	public static void switchToNewWindow() {
+		String parentWinHandle = DriverManager.getDriver().getWindowHandle();
+		Set<String> winHandles = DriverManager.getDriver().getWindowHandles();
+		for(String temp:winHandles) {
+			if(!temp.equalsIgnoreCase(parentWinHandle)) {
+				DriverManager.getDriver().switchTo().window(temp);
+			}
+		}
+		DriverManager.getDriver().manage().window().maximize();
+	}
 
+	public static void switchToParent() {
+		String parentWinHandle = DriverManager.getDriver().getWindowHandle();
+		Set<String> winHandles = DriverManager.getDriver().getWindowHandles();
+		for(String temp:winHandles) {
+			if(temp.equalsIgnoreCase(parentWinHandle)) {
+				DriverManager.getDriver().switchTo().window(temp);
+			}
+		}
+		//DriverManager.getDriver().manage().window().maximize();
+	}
+	
 }

@@ -1,25 +1,139 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" total="10" passed="10">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="25800" started-at="2020-04-29T12:31:24Z" finished-at="2020-04-29T12:31:49Z">
+  <suite name="Suite" duration-ms="1092935" started-at="2020-05-15T11:59:45Z" finished-at="2020-05-15T12:17:58Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="25800" started-at="2020-04-29T12:31:24Z" finished-at="2020-04-29T12:31:49Z">
+    <test name="Test" duration-ms="1092935" started-at="2020-05-15T11:59:45Z" finished-at="2020-05-15T12:17:58Z">
       <class name="com.ecommerce.tests.TitleTests">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.ecommerce.tests.TitleTests@4678c730]" name="setUp" is-config="true" duration-ms="20974" started-at="2020-04-29T18:01:24Z" finished-at="2020-04-29T18:01:45Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.ecommerce.tests.TitleTests@4501b7af]" name="setUp" is-config="true" duration-ms="21739" started-at="2020-05-15T17:29:45Z" finished-at="2020-05-15T17:30:07Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="TEST02()[pri:0, instance:com.ecommerce.tests.TitleTests@4678c730]" name="TEST02" duration-ms="4797" started-at="2020-04-29T18:01:45Z" finished-at="2020-04-29T18:01:49Z">
+        <test-method status="PASS" signature="TEST01()[pri:0, instance:com.ecommerce.tests.TitleTests@4501b7af]" name="TEST01" duration-ms="30512" started-at="2020-05-15T17:30:07Z" finished-at="2020-05-15T17:30:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TEST01 -->
+        <test-method status="PASS" signature="wrapUp()[pri:0, instance:com.ecommerce.tests.TitleTests@4501b7af]" name="wrapUp" is-config="true" duration-ms="743" started-at="2020-05-15T17:30:37Z" finished-at="2020-05-15T17:30:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- wrapUp -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.ecommerce.tests.TitleTests@4501b7af]" name="setUp" is-config="true" duration-ms="28938" started-at="2020-05-15T17:30:38Z" finished-at="2020-05-15T17:31:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="TEST02()[pri:0, instance:com.ecommerce.tests.TitleTests@4501b7af]" name="TEST02" duration-ms="25016" started-at="2020-05-15T17:31:07Z" finished-at="2020-05-15T17:31:32Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TEST02 -->
-        <test-method status="PASS" signature="wrapUp()[pri:0, instance:com.ecommerce.tests.TitleTests@4678c730]" name="wrapUp" is-config="true" duration-ms="1" started-at="2020-04-29T18:01:49Z" finished-at="2020-04-29T18:01:49Z">
+        <test-method status="PASS" signature="wrapUp()[pri:0, instance:com.ecommerce.tests.TitleTests@4501b7af]" name="wrapUp" is-config="true" duration-ms="736" started-at="2020-05-15T17:31:32Z" finished-at="2020-05-15T17:31:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- wrapUp -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.ecommerce.tests.TitleTests@4501b7af]" name="setUp" is-config="true" duration-ms="218335" started-at="2020-05-15T17:31:33Z" finished-at="2020-05-15T17:35:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="TEST03()[pri:0, instance:com.ecommerce.tests.TitleTests@4501b7af]" name="TEST03" duration-ms="62404" started-at="2020-05-15T17:35:11Z" finished-at="2020-05-15T17:36:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TEST03 -->
+        <test-method status="PASS" signature="wrapUp()[pri:0, instance:com.ecommerce.tests.TitleTests@4501b7af]" name="wrapUp" is-config="true" duration-ms="641" started-at="2020-05-15T17:36:13Z" finished-at="2020-05-15T17:36:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- wrapUp -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.ecommerce.tests.TitleTests@4501b7af]" name="setUp" is-config="true" duration-ms="11702" started-at="2020-05-15T17:36:14Z" finished-at="2020-05-15T17:36:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="TEST04()[pri:0, instance:com.ecommerce.tests.TitleTests@4501b7af]" name="TEST04" duration-ms="11248" started-at="2020-05-15T17:36:26Z" finished-at="2020-05-15T17:36:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TEST04 -->
+        <test-method status="PASS" signature="wrapUp()[pri:0, instance:com.ecommerce.tests.TitleTests@4501b7af]" name="wrapUp" is-config="true" duration-ms="649" started-at="2020-05-15T17:36:37Z" finished-at="2020-05-15T17:36:38Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- wrapUp -->
       </class> <!-- com.ecommerce.tests.TitleTests -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      <class name="com.ecommerce.tests.OrderTests">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.ecommerce.tests.OrderTests@523884b2]" name="setUp" is-config="true" duration-ms="10055" started-at="2020-05-15T17:44:05Z" finished-at="2020-05-15T17:44:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="TEST07()[pri:0, instance:com.ecommerce.tests.OrderTests@523884b2]" name="TEST07" duration-ms="36449" started-at="2020-05-15T17:44:15Z" finished-at="2020-05-15T17:44:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TEST07 -->
+        <test-method status="PASS" signature="wrapUp()[pri:0, instance:com.ecommerce.tests.OrderTests@523884b2]" name="wrapUp" is-config="true" duration-ms="1099" started-at="2020-05-15T17:44:51Z" finished-at="2020-05-15T17:44:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- wrapUp -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.ecommerce.tests.OrderTests@523884b2]" name="setUp" is-config="true" duration-ms="10721" started-at="2020-05-15T17:44:52Z" finished-at="2020-05-15T17:45:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="TEST08()[pri:0, instance:com.ecommerce.tests.OrderTests@523884b2]" name="TEST08" duration-ms="174262" started-at="2020-05-15T17:45:03Z" finished-at="2020-05-15T17:47:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TEST08 -->
+        <test-method status="PASS" signature="wrapUp()[pri:0, instance:com.ecommerce.tests.OrderTests@523884b2]" name="wrapUp" is-config="true" duration-ms="689" started-at="2020-05-15T17:47:57Z" finished-at="2020-05-15T17:47:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- wrapUp -->
+      </class> <!-- com.ecommerce.tests.OrderTests -->
+      <class name="com.ecommerce.tests.PurchaseTests">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.ecommerce.tests.PurchaseTests@59fa1d9b]" name="setUp" is-config="true" duration-ms="9427" started-at="2020-05-15T17:38:30Z" finished-at="2020-05-15T17:38:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="TEST05_01()[pri:0, instance:com.ecommerce.tests.PurchaseTests@59fa1d9b]" name="TEST05_01" duration-ms="77415" started-at="2020-05-15T17:38:39Z" finished-at="2020-05-15T17:39:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TEST05_01 -->
+        <test-method status="PASS" signature="wrapUp()[pri:0, instance:com.ecommerce.tests.PurchaseTests@59fa1d9b]" name="wrapUp" is-config="true" duration-ms="736" started-at="2020-05-15T17:39:56Z" finished-at="2020-05-15T17:39:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- wrapUp -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.ecommerce.tests.PurchaseTests@59fa1d9b]" name="setUp" is-config="true" duration-ms="13418" started-at="2020-05-15T17:39:57Z" finished-at="2020-05-15T17:40:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="TEST09()[pri:0, instance:com.ecommerce.tests.PurchaseTests@59fa1d9b]" name="TEST09" duration-ms="12152" started-at="2020-05-15T17:40:11Z" finished-at="2020-05-15T17:40:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TEST09 -->
+        <test-method status="PASS" signature="wrapUp()[pri:0, instance:com.ecommerce.tests.PurchaseTests@59fa1d9b]" name="wrapUp" is-config="true" duration-ms="718" started-at="2020-05-15T17:40:23Z" finished-at="2020-05-15T17:40:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- wrapUp -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.ecommerce.tests.PurchaseTests@59fa1d9b]" name="setUp" is-config="true" duration-ms="11893" started-at="2020-05-15T17:40:24Z" finished-at="2020-05-15T17:40:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="TEST06()[pri:0, instance:com.ecommerce.tests.PurchaseTests@59fa1d9b]" name="TEST06" duration-ms="208406" started-at="2020-05-15T17:40:35Z" depends-on-methods="com.ecommerce.tests.PurchaseTests.TEST05_01" finished-at="2020-05-15T17:44:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TEST06 -->
+        <test-method status="PASS" signature="wrapUp()[pri:0, instance:com.ecommerce.tests.PurchaseTests@59fa1d9b]" name="wrapUp" is-config="true" duration-ms="694" started-at="2020-05-15T17:44:04Z" finished-at="2020-05-15T17:44:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- wrapUp -->
+      </class> <!-- com.ecommerce.tests.PurchaseTests -->
+      <class name="com.ecommerce.tests.AccountTests">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.ecommerce.tests.AccountTests@c038203]" name="setUp" is-config="true" duration-ms="10097" started-at="2020-05-15T17:36:38Z" finished-at="2020-05-15T17:36:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="TEST05()[pri:0, instance:com.ecommerce.tests.AccountTests@c038203]" name="TEST05" duration-ms="101329" started-at="2020-05-15T17:36:48Z" finished-at="2020-05-15T17:38:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TEST05 -->
+        <test-method status="PASS" signature="wrapUp()[pri:0, instance:com.ecommerce.tests.AccountTests@c038203]" name="wrapUp" is-config="true" duration-ms="669" started-at="2020-05-15T17:38:29Z" finished-at="2020-05-15T17:38:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- wrapUp -->
+      </class> <!-- com.ecommerce.tests.AccountTests -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>

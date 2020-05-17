@@ -6,8 +6,10 @@
       <class name="com.ecommerce.tests.TitleTests">
         <methods>
           <include name="setUp"/>
+          <include name="TEST04"/>
           <include name="wrapUp"/>
-          <include name="titleTest"/>
+          <include name="TEST02"/>
+          <include name="TEST03"/>
         </methods>
       </class> <!-- com.ecommerce.tests.TitleTests -->
     </classes>

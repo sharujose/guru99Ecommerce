@@ -15,7 +15,7 @@ public class BaseTest {
 	public void setUp() {
 		try {
 			Driver.initialize();
-			Driver.loadUrl();
+			//Driver.loadUrl();
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
@@ -27,6 +27,6 @@ public class BaseTest {
 
 	@AfterMethod
 	public void wrapUp() {
-		//DriverManager.getDriver().close();
+		DriverManager.getDriver().quit();
 	}
 }

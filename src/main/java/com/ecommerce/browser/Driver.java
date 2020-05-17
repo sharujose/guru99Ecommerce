@@ -16,9 +16,9 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class Driver {
 
-	public static WebDriver driver = null;
+	public  WebDriver driver = null;
 	public DesiredCapabilities capability;
-	public static Properties prop;
+	public  Properties prop;
 
 	private Driver() {
 
@@ -29,6 +29,7 @@ public class Driver {
 			prop.load(Driver.class.getClassLoader().getSystemResourceAsStream(Constants.CONFIG_PROPERTIES));
 			String browserName = prop.getProperty("browsername");
 			if (browserName.equalsIgnoreCase("chrome")) {
+				System.setProperty("webdriver.chrome.silentOutput", "true");
 				WebDriverManager.chromedriver().setup();
 				driver = new ChromeDriver();
 
@@ -46,23 +47,28 @@ public class Driver {
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Constants.IMPLICITWAIT, TimeUnit.SECONDS);
 		
-
+		try {
+			driver.get(prop.getProperty("url"));
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
 		
 
 		DriverManager.setWebDriver(driver);
+		
 
 	}
 
-	public static void loadUrl() {
+	/*public static void loadUrl() {
 		try {
 			driver.get(prop.getProperty("url"));
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
 	}
-
+*/
 	public static void initialize() {
-		if (DriverManager.getDriver() == null)
+		//if (DriverManager.getDriver() == null)
 			try {
 				new Driver();
 			} catch (Exception e) {
