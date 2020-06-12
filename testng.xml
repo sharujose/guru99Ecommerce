@@ -6,9 +6,9 @@
 	</listeners>
 	<test thread-count="1" name="Test">
 		<classes>
-			<!-- <class name="com.ecommerce.tests.TitleTests" />
+			<class name="com.ecommerce.tests.TitleTests" />
 			<class name="com.ecommerce.tests.AccountTests" />
-			<class name="com.ecommerce.tests.PurchaseTests" /> -->
+			<class name="com.ecommerce.tests.PurchaseTests" />
 			<class name="com.ecommerce.tests.OrderTests" />
 			<class name="com.ecommerce.tests.BaseTest" />
 		</classes>
