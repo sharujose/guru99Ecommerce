@@ -75,7 +75,7 @@ public class MobilePage extends BasePage {
 		if (list.containsAll(list2) && list.size() == list2.size())
 
 		{
-			System.out.println("matching");
+			System.out.println("The products are matching in both the list");
 			flag = true;
 
 		}
@@ -108,7 +108,7 @@ public class MobilePage extends BasePage {
 				.findElement(
 						By.xpath("//div[@class='product-info']/h2/a[@title='" + productName + "']//following::span[2]"))
 				.getText();
-		System.out.println(price);
+		System.out.println("Price of selected product"+productName+"is"+price);
 		return price;
 
 	}
@@ -157,7 +157,7 @@ public class MobilePage extends BasePage {
 	public String mobilepageTitle() {
 
 		String titleText = mobilepageTitle.getText();
-		System.out.println(titleText);
+		System.out.println("Title of mobilepage is"+titleText);
 		return titleText;
 
 	}

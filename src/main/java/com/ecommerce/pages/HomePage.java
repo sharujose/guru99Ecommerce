@@ -42,7 +42,7 @@ public class HomePage extends BasePage {
 	public String homepageTitle() {
 
 		String titleText = homepageTitle.getText();
-		System.out.println(titleText);
+		System.out.println("Homepage title is "+titleText);
 		return titleText;
 
 	}

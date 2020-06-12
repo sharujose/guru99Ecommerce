@@ -3,15 +3,16 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.ecommerce.tests.TitleTests">
+      <class name="com.ecommerce.tests.OrderTests">
         <methods>
           <include name="setUp"/>
-          <include name="TEST04"/>
+          <include name="TEST08"/>
+          <include name="TEST07"/>
+          <include name="beforeSuite"/>
           <include name="wrapUp"/>
-          <include name="TEST02"/>
-          <include name="TEST03"/>
+          <include name="afterSuite"/>
         </methods>
-      </class> <!-- com.ecommerce.tests.TitleTests -->
+      </class> <!-- com.ecommerce.tests.OrderTests -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

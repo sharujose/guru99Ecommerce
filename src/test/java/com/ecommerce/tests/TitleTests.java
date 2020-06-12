@@ -19,13 +19,15 @@ public class TitleTests extends BaseTest {
 
 	/*
 	 * 
-	 * Test Steps Step 1. Goto http://live.demoguru99.com/ Step 2. Verify Title of
-	 * the page Step 3. Click on ‘MOBILE’ menu Step 4. Verify Title of the page Step
-	 * 5. In the list of all mobile , select ‘SORT BY’ dropdown as ‘name’ Step 6.
-	 * Verify all products are sorted by name
+	 * Test Steps Step 1. Goto http://live.demoguru99.com/
+	 * 2. Verify Title of the page
+	 * 3. Click on ‘MOBILE’ menu  
+	 * 4. Verify Title of the page
+	 * 5. In the list of all mobile , select ‘SORT BY’ dropdown as ‘name’
+	 * 6.Verify all products are sorted by name
 	 */
 
-	@Test(priority=1)
+	@Test(priority=1, description ="Test:Verify all products are sorted by name")
 	public static void TEST01() {
 		homepageObject = new HomePage();
 		String homepageTitle = homepageObject.homepageTitle();
@@ -40,13 +42,14 @@ public class TitleTests extends BaseTest {
 	}
 
 	/*
-	 * Test Steps: 1. Goto http://live.demoguru99.com/ 2. Click on ‘MOBILE’ menu 3.
-	 * In the list of all mobile , read the cost of Sony Xperia mobile (which is
-	 * $100) 4. Click on Sony Xperia mobile 5. Read the Sony Xperia mobile from
-	 * detail page. Product value in list and details page should be equal ($100).
+	 * Test Steps: 1. Goto http://live.demoguru99.com/ 2. Click on ‘MOBILE’ menu 
+	 * 3.In the list of all mobile , read the cost of Sony Xperia mobile (which is
+	 * $100) 
+	 * 4. Click on Sony Xperia mobile 
+	 * 5. Read the Sony Xperia mobile from detail page. Product value in list and details page should be equal ($100).
 	 */
 
-	 @Test(priority=2)
+	 @Test(priority=2 ,description ="Test:product value should match in details and list")
 	public static void TEST02() {
 		homepageObject = new HomePage();
 		mobilepageObject = homepageObject.mobileLink();
@@ -66,7 +69,7 @@ public class TitleTests extends BaseTest {
 	 * cart is empty
 	 */
 
-	@Test(priority=3)
+	@Test(priority=3,description ="Test:Verify error message on adding more items into cart")
 	public static void TEST03() {
 		homepageObject = new HomePage();
 		mobilepageObject = homepageObject.mobileLink();
@@ -98,7 +101,7 @@ public class TitleTests extends BaseTest {
 	6. Close the Popup Windows
 	*/
 
-	@Test(priority=4)
+	@Test(priority=4,description ="Test:Verify compare popup window and selected products are same ")
 	public static void TEST04() {
 		homepageObject = new HomePage();
 		mobilepageObject = homepageObject.mobileLink();

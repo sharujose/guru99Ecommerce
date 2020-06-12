@@ -11,7 +11,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-
+import com.ecommerce.reports.LogStatus;
 import com.ecommerce.browser.Driver;
 import com.ecommerce.browser.DriverManager;
 import com.ecommerce.constants.Constants;
@@ -34,7 +34,8 @@ public class BasePage {
 	{
 		explicitwait(element);
 		element.click();
-		log.info("Clicking is successfull on "+ element);
+		//log.info("Clicking is successfull on "+ element);
+		LogStatus.pass("Clicking is successfull on "+ element);
 	}
 
 	public static void explicitwait(WebElement element) {
@@ -65,7 +66,8 @@ public class BasePage {
 		element.sendKeys(text);
 		//LogStatus.pass(text + " is entered in to the "+ element);
 		
-		log.info(text + " is entered in to the "+ element);
+		//log.info(text + " is entered in to the "+ element);
+		LogStatus.pass(text + " is entered in to the "+ element);
 	}
 	
 	
@@ -76,7 +78,8 @@ public class BasePage {
 		element.sendKeys(text);
 		//LogStatus.pass(text + " is entered in to the "+ element);
 		
-		log.info(text + " is entered in to the "+ element);
+		//log.info(text + " is entered in to the "+ element);
+		LogStatus.pass(text + " is entered in to the "+ element);
 	}
 
 	public static void sendkeys(By by, String text)  {
@@ -89,10 +92,12 @@ public class BasePage {
 	public void switchFrame(String frameid,By frameclose) {
 		//frame("flow_close_btn_iframe");
 		DriverManager.getDriver().switchTo().frame(frameid);
-		log.info("switched to frame"+frameid);
+		//log.info("switched to frame"+frameid);
+		LogStatus.pass("switched to frame"+frameid);
 		click(frameclose);
 		DriverManager.getDriver().switchTo().defaultContent();
-		log.info("switched to main window");
+		//log.info("switched to main window");
+		LogStatus.pass("switched to main window");
 	}
 
 	public static void selectByValue(WebElement element,String text) {
@@ -103,7 +108,8 @@ public class BasePage {
 	public static void selectByVisibleText(WebElement element,String text) {
 		explicitwait(element);
 		new Select(element).selectByVisibleText(text);
-		log.info(text + " selected from dropdown "+ element);
+		//log.info(text + " selected from dropdown "+ element);
+		LogStatus.pass(text + " selected from dropdown "+ element);;
 	}
 
 	public static void switchToNewWindow() {

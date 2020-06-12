@@ -33,7 +33,7 @@ public class AccountTests extends BaseTest {
 	*/
 
 
-	@Test()
+	@Test(description =" Test: create an account and  share wishlist to other poeple using email")
 	public void TEST05() {
 		homepageObject = new HomePage();
 		homepageObject.AccountDD();

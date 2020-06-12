@@ -21,7 +21,7 @@ public class OrderTests extends BaseTest {
 	static MyOrdersPage myOrdersPageObject;
 	static CheckoutPage checkoutPageObject;
 
-	@Test(priority=1)
+	@Test(priority=1 ,description ="Test: Verify the previously created accounr status is pending")
 	/*
 	 * 1. Go to http://live.demoguru99.com/ 2. Click on My Account link 3. Login in
 	 * application using previously created credential 4. Click on 'My Orders' 5.
@@ -46,7 +46,24 @@ public class OrderTests extends BaseTest {
 
 	}
 
-	@Test(priority=2)
+	
+	/*  Verify you are able to change or reorder previously added product
+	 *  Test Data = QTY = 10
+	Test Steps:
+	1. Go to http://live.demoguru99.com/
+	2. Click on my account link
+	3. Login in application using previously created credential
+	4. Click on 'REORDER' link , change QTY & click Update
+	5. Verify Grand Total is changed
+	6. Complete Billing & Shipping Information
+	7. Verify order is generated and note the order number
+
+	Expected outcomes:
+	1) Grand Total is Changed
+	2) Order number is generated
+	*/
+
+	@Test(priority=2 ,description ="Test : order previously added product")
 	public void TEST08() {
 		int productQuantity = 10;
 		homepageObject = new HomePage();

@@ -1,21 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]">
+  <listeners>
+    <listener class-name="com.ecommerce.listeners.ListenerClass"/>
+  </listeners>
   <test name="Test(failed)">
     <classes>
-      <class name="com.ecommerce.tests.AccountTests">
+      <class name="com.ecommerce.tests.BaseTest">
         <methods>
-          <include name="setUp"/>
-          <include name="wrapUp"/>
+          <include name="beforeSuite"/>
+          <include name="afterSuite"/>
         </methods>
-      </class> <!-- com.ecommerce.tests.AccountTests -->
-      <class name="com.ecommerce.tests.PurchaseTests">
-        <methods>
-          <include name="setUp"/>
-          <include name="TEST09"/>
-          <include name="wrapUp"/>
-        </methods>
-      </class> <!-- com.ecommerce.tests.PurchaseTests -->
+      </class> <!-- com.ecommerce.tests.BaseTest -->
       <class name="com.ecommerce.tests.OrderTests">
         <methods>
           <include name="setUp"/>
@@ -23,12 +19,6 @@
           <include name="wrapUp"/>
         </methods>
       </class> <!-- com.ecommerce.tests.OrderTests -->
-      <class name="com.ecommerce.tests.TitleTests">
-        <methods>
-          <include name="setUp"/>
-          <include name="wrapUp"/>
-        </methods>
-      </class> <!-- com.ecommerce.tests.TitleTests -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
